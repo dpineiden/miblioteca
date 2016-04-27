@@ -94,7 +94,8 @@ pip install --upgrade pip
 crear carpeta para el proyecto:
 ******************************
 
-mkdir -p ~Proyectos/Biblioteca
+cd ~
+mkdir -p Proyectos/Biblioteca
 
 Inicializa proyecto Django:
 ***************************
@@ -202,11 +203,11 @@ PROJECTS_DIR = os.path.join('apps')
 
 STATICFILES_DIRS = [
    FILES_DIR,
-   os.path.join(PROJECTS_DIR, "app1/static/"),
-   os.path.join(PROJECTS_DIR, "app2/static/"),
-   os.path.join(PROJECTS_DIR, "app3/static/"),
-   os.path.join(PROJECTS_DIR, "app4/static/"),
-   os.path.join(PROJECTS_DIR, "app5/static/"),
+   #os.path.join(PROJECTS_DIR, "app1/static/"),
+   #os.path.join(PROJECTS_DIR, "app2/static/"),
+   #os.path.join(PROJECTS_DIR, "app3/static/"),
+   #os.path.join(PROJECTS_DIR, "app4/static/"),
+   #os.path.join(PROJECTS_DIR, "app5/static/"),
 ]
 
 COMPRESS_ENABLED=True
@@ -259,6 +260,9 @@ workon biblioteca
 
 Recolectar los archivos statics
 *******************************
+
+En la carpeta principal del proyecto, en donde está 'manage.py' hacer una llamada a la recolección
+de los archivos estáticos (css,js)
 
 ./manage.py collectstatic
 
