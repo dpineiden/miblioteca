@@ -167,11 +167,13 @@ a
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 </code>
 
+Cambiar la SECRET_KEY a una llamada a variable de ambiente.
 
-a
 <code>
-SECRET_KEY = '-+@!575%v*#fq8go=p8rx)czn0w$_a-0^ju4&v0ua=%uhnk=#!'
+SECRET_KEY = '<llave secreta propia>'
 </code>
+
+A:
 
 <code>
 from django.core.exceptions import ImproperlyConfigured
